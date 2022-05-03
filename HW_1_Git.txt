@@ -1,0 +1,232 @@
+
+Homework 1 GIT
+
+https://github.com/1amak
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+ 5. Клонировать репозиторий JSON на локальный компьютер. git clone https://github.com/1amak/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”  cd JSON,   touch new.json
+ 7. Добавить файл под гит. git add new.json
+ 8. Закоммитить файл. git commit -m "create new.json"
+ 9. Отправить файл на внешний GitHub репозиторий. git push
+ 10. Отредактировать содержание файла "new.json" - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+Insert
+
+{
+        "name":"Dmytro",
+        "surname":"Myroshnychenko" ,
+        "age":26 ,
+        "pets":2 ,
+        "desired salary":500
+}
+
+Esc 
+:wq
+
+ 11. Отправить изменения на внешний репозиторий. git commit -am "create new.json",  git push
+ 12. Создать файл preferences.json. touch preferences.json
+ 13.  В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате JSON.
+vim preferences.json
+Insert
+
+{
+       "Favorite film":"Pulp Fiction" ,
+       "Favorite TV series":"The Office",
+       "Favorite food":"Borsch" ,
+       "Favorite time of year": "Spring" ,
+       "The country i want to visit":"USA"
+}
+
+Esc 
+:wq
+ 14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON. 
+vim skills.json
+Insert
+
+{
+	"Skills": "Git", 
+		  "Postman", 
+		  "Charles",
+		  "Fiddler",
+		  "Dev Tools",
+		  "Android Studio",
+		  "SQL",
+		  "Jmeter"
+}
+
+Esc 
+:wq
+ 15. Отправить сразу 2 файла на внешний репозиторий.  git add . ,  git commit -m "create preferences.json, skills.json"
+ 16. На веб интерфейсе создать файл bug_report.json.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+
+{
+  
+"Summary":"Application crashes upon clicking the SAVE button while creating a new user.",
+"Bug ID":"(It will be automatically created by the BUG Tracking tool once you save this bug).",
+"Area Path":"USERS menu -> New Users",
+"Build Number":"Version Number 5.0.1",
+"Severity":"HIGH",
+"Priority":"HIGH",
+"Assigned to":"Developer-X",
+"Reported By":"Your Name",
+"Reported On":"Date",
+"Reason": "Defect",
+"Status":"New",
+"Environment":"Windows 2003/SQL Server 2005",
+
+"Description":"Application crashes upon clicking the SAVE button while creating a new the user, hence unable to create a new user in the application.",
+
+"Steps to Reproduce":
+
+"1) Login into the Application.",
+"2) Navigate to the Users Menu -> New User",
+"3) Filled out all the user information fields.",
+"4) Clicked on the ‘Save’ button.",
+"5) Seen an error page “ORA1090 Exception: Insert values Error…”",
+"6) See the attached logs for more information (Attach more logs related to the bug..IF any)",
+"7) Also see the attached screenshot of the error page.",
+
+"Expected Result":"On clicking the SAVE button, you should be prompted to a successful message “New User has been created successfully”."
+
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий JSON.   git fetch, git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер. git clone https://github.com/1amak/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.  cd XML , touch new.xml
+ 24. Добавить файл под гит. git add new.xml
+ 25. Закоммитить файл. git commit -m "create new.xml"
+ 26. Отправить файл на внешний GitHub репозиторий. git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+     vim new.xml
+     Insert
+
+         <name>:Dmytro</name>
+         <surname>:Myroshnychenko</surname>
+         <age>26</age>
+         <pets>2</pets>
+         <desired_salary>500</desired_salary>
+
+
+Esc 
+:wq
+ 28. Отправить изменения на внешний репозиторий. git commit -am "create new.xml",  git push
+ 29. Создать файл preferences.xml.    touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.   
+vim preferences.xml    
+Insert
+
+<Favorite_film>Pulp Fiction</Favotite_film>
+<Favorite_TV_series>The Office</FavoriteTV_series>
+<Favorite_food>Borsch</Favorit_food>
+<Favorite_time_of_year>Spring</Favorite_time_of_year>
+<The_country_i_want_to_visit>USA</The_country_i_want_to_visit>
+
+
+Esc 
+:wq
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML  
+vim skills.xml
+ Insert
+<Skills>Git, Postman, Charles, Fiddler, Dev Tools, Android Studio, SQL, Jmeter</Skills>
+
+Esc 
+:wq
+
+ 32. Сделать коммит в одну строку. git add  . ,  git commit -am "create preferences.xml, skills.xml"
+ 33. Отправить сразу 2 файла на внешний репозиторий. git push
+ 34. На веб интерфейсе создать файл bug_report.xml.   Create bug_report.xml  
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ <Summary>Adding invalid email to profile</Summary>
+<Pre_conditions>Open the website www.dybok.com.ua, be authorized.</Pre_conditions>
+<Steps>
+1) Go to the website www.dybok.com.ua
+2) In the upper right corner, click on the profile name.
+3) In the “Email” field, enter an invalid email “*(*(@gmail.com”
+4) Click the "Сохранить" button
+</Steps>
+
+<Post_condition> Enter a valid email in the “Email” field.</Post_condition>
+<Type>Logical</Type>
+<Severity>Маjor</Severity>
+<Priority>Medium</Priority>
+
+<Actual_result>Email successfully saved.</Actual_result>
+<Expected_result>The message “Email cannot contain special characters” should appear under the “Email” field.</Expected_result>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML git fetch   git pull
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер. git clone https://github.com/1amak/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”. cd TXT, touch new.txt
+ 4. Добавить файл под гит. git add new.txt
+ 5. Закоммитить файл.  git commit -m "create new.txt"
+ 6. Отправить файл на внешний GitHub репозиторий. git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+vim new.txt
+Insert
+        Name: Dmytro,
+        Surname: Myroshnychenko,
+        Age: 26,
+        Pets: 2,
+        Desired salary: 500
+
+Esc 
+:wq
+ 8. Отправить изменения на внешний репозиторий. git commit -am "create new.txt" , git push
+ 9. Создать файл preferences.txt.   touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+vim preferences.txt
+Insert
+        Favorite film: Pulp Fiction,
+        Favorite TV series: The Office,
+        Favorite food: Borsch,
+        Favorite time of year: Spring,
+        The country i want to visit: USA
+
+Esc 
+:wq
+ 11. Создать файл skills.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT. 
+vim sklls.txt
+Insert
+
+Skills: Git, Postman, Charles, Fiddler, Dev Tools, Android Studio, SQL, Jmeter
+
+Esc 
+:wq
+ 12. Сделать коммит в одну строку. git add . , git commit -am "create preferences.txt, skills.txt"
+ 13. Отправить сразу 2 файла на внешний репозиторий.  git push
+ 14. На веб интерфейсе создать файл bug_report.txt.  Create bug_report.xml 
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе. Commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+
+Summary: Adding invalid email to profile.
+Pre-conditions: Open the website www.dybok.com.ua, be authorized.
+Steps:
+1) Go to the website www.dybok.com.ua;
+2) In the upper right corner, click on the profile name;
+3) In the “Email” field, enter an invalid email “&*(&*(@gmail.com”;
+4) Click the "Сохранить" button.
+
+Post-condition: Enter a valid email in the “Email” field.
+Type: Logical.
+Severity: Маjor.
+Priority: Medium.
+
+Actual result: Email successfully saved.
+Expected result: The message “Email cannot contain special characters” should appear under the “Email” field.
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT  git fetch, git pull
